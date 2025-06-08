@@ -1,0 +1,92 @@
+.landing-container {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: space-between;
+    /* height: 70vh; */
+    /* background-color: #ebc9c9; */
+    padding: 3rem 8%;
+
+}
+
+.landing-left {
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    width: 55%;
+}
+
+.landing-left h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    color: #ac663e;
+}
+
+.landing-left p {
+    font-size: 1.7rem;
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.landing-right {
+    display: flex;
+    align-items: right;
+    justify-content: right;
+    width: 45%;
+}
+
+.landing-right img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: .8rem 8%;
+    background-color: #f1f1eb;
+    gap: 2rem;
+    padding-top: 2rem;padding-bottom: 2rem;
+}
+
+.services-cards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: start;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .landing-container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .landing-left {
+        width: 100%;
+        /* text-align: left; */
+    }
+
+    .landing-right {
+        display: none;
+    }
+
+    .landing-left h1 {
+        font-size: 2.5rem;
+    }
+
+    .landing-left p {
+        font-size: 1.2rem;
+    }
+
+}
