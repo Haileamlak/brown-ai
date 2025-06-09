@@ -11,7 +11,7 @@
         "Segoe UI Symbol",
         "Noto Color Emoji";
 
-        /* border: .1px solid red */
+    /* border: .1px solid red */
 }
 
 body {
@@ -37,7 +37,7 @@ header {
 
 /* small sized screen */
 @media screen and (max-width: 768px) {
-       
+
     .container {
         padding-left: 8%;
         padding-right: 8%;
@@ -55,7 +55,8 @@ header {
 /* Button styles */
 .btn,
 .btn-orange {
-    background-color: #AD7A32;
+    background-color:#c07a35 ;
+        /* background-color: #D47E30; */
     color: white;
     border: none;
     padding: .8rem 1.2rem;
@@ -69,7 +70,7 @@ header {
     display: inline-block;
     text-align: center;
     width: fit-content;
-    max-width: 200px;   
+    max-width: 200px;
     height: fit-content;
     line-height: 1.5;
     /* border: .1px solid #ac663e; */

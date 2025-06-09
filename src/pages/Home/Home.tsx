@@ -15,12 +15,13 @@ const Home: React.FC = () => {
             <div className="landing-container container">
                 <div className='landing-left'>
                     <h1>Brown AI</h1>
-                    <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#AD7A32' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
+                    <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
 
                     <button className="btn btn-orange">Contact Us</button>
                 </div>
                 <div className='landing-right'>
-                    <img src="src/assets/brownlogo.svg" alt="Logo" width={300} />
+                    <img src="src/assets/brownlogo.png" alt="Logo" width={300} />
+                    
                 </div>
             </div>
             <div className='services-container container'>
@@ -50,11 +51,12 @@ const Home: React.FC = () => {
 
             <div className='vision-container container'>
                 <h2>Our Vision</h2>
+                    <p>We aim to build a world where AI is accessible to everyone, enabling individuals and businesses to harness its power for innovation and growth.</p>
                 <div className='vision-box'>
-                    <div className='vision-card'>
-                        <p>We aim to build a world where AI is accessible to everyone, enabling individuals and businesses to harness its power for innovation and growth.</p>
-                    </div>
-               </div>
+                    
+                </div>
+                {/* <div className='vision-card'> */}
+                {/* </div> */}
             </div>
 
            

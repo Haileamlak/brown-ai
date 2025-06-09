@@ -1,57 +1,57 @@
-/* 
-<footer className="footer"><div className="footer-content"><div className="footer-top"><div className="footer-logo"><img src="src/assets/brownlogo.svg" alt="Brown AI Logo" width= {
-    100
-}
-
-/></div><div className="footer-links"><a href="/about">About Us</a><a href="/services">Services</a><a href="/projects">Projects</a><a href="/contact">Contact</a></div><div className="footer-contact"><p>Email: <a href="mailto:info@brown.ai">info@brown.ai</a></p><p>Phone: <a href="tel:+1234567890">+1 234 567 890</a></p><p>Address: 123 Brown AI St, AI City, AI 12345</p></div></div><div className="footer-bottom"><p className='footer-copy'>&copy;
-    {
-    new Date().getFullYear()
-}
-
-Brown AI. All rights reserved.</p><div className="footer-socials"><a href="https://www.facebook.com/BrownAI" target="_blank" rel="noopener noreferrer">Facebook</a><a href="https://www.twitter.com/BrownAI" target="_blank" rel="noopener noreferrer">Twitter</a><a href="https://www.linkedin.com/company/brown-ai" target="_blank" rel="noopener noreferrer">LinkedIn</a></div></div></div></footer> */
-
 .footer {
     background-color: #f1f1eb;
-    padding: 2rem;
+    padding: 2rem 0;
     text-align: start;
     font-family: 'Arial', sans-serif;
-}   
+}
+
 .footer-content {
-    max-width: 800px;
+    /* max-width: 800px; */
     /* margin: 0 auto; */
-}   
+}
+
 .footer-top {
     display: flex;
+    /* flex-wrap: wrap; */
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
+    gap: 2.5rem;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
     gap: 1.5rem;
 }
-.footer-logo img {
-    width: 100px;
-    height: auto;
-}
+
 .footer-links {
     display: flex;
     flex-direction: column;
     gap: .5rem;
 }
+
 .footer-links a {
     text-decoration: none;
     color: #333;
     font-weight: 500;
 }
+
 .footer-contact {
     /* text-align: start; */
     gap: .5rem;
     display: flex;
     flex-direction: column;
+    /* align-items: end; */
 }
 
 .footer-contact p {
     /* margin: 0.5rem 0; */
     color: #555;
 }
+
 .footer-bottom {
     margin-top: 2rem;
     display: flex;
@@ -61,339 +61,118 @@ Brown AI. All rights reserved.</p><div className="footer-socials"><a href="https
     justify-content: space-between;
     gap: 1rem;
 }
+
 .footer-copy {
     /* color: #777; */
     font-size: 0.9rem;
 }
+
 .footer-socials {
     display: flex;
     flex-direction: row;
     gap: 1rem;
 }
-.footer-socials a {
-    text-decoration: none;
-    color: #333;
-    font-weight: 500;
+
+.footer-logo-img1 {
+    width: 120px;
+    border-radius: 24px;
+    display: none;
 }
-@media (max-width: 768px) {
+
+@media screen and (max-width: 600px) {
+    /* .footer-logo-img1 {
+        display: none;
+
+    } */
+
     .footer-top {
         flex-direction: column;
-        align-items: center;
+        align-items: start;
     }
+
+
+}
+
+@media (max-width: 768px) {
+
     .footer-links {
         flex-direction: column;
-        align-items: center;
+    }
+
+    .footer-logo-img1 {
+        display: none;
+        height: 0;
     }
 }
+
+@media screen and (max-width: 1036px) {
+
+
+    .footer-logo-img1 {
+        /* width: 90px; */
+        display: block;
+
+    }
+
+    .footer-logo-img2 {
+        display: none;
+
+    }
+
+}
+
 @media (max-width: 480px) {
-    .footer-logo img {
-        width: 80px;
+    .footer-logo-img1 {
+        display: none;
     }
-    .footer-links {
-        flex-direction: column;
-        align-items: center;
-    }
+
     .footer-contact p {
         font-size: 0.9rem;
     }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .footer-bottom {
+        flex-direction: column;
+        align-items: start;
+    }
 }
+
 @media (max-width: 360px) {
-    .footer-links {
-        font-size: 0.8rem;
-    }
-    .footer-contact p {
-        font-size: 0.8rem;
-    }
+
+    .footer-links,
+    .footer-contact p,
     .footer-copy {
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
 }
+
 @media (max-width: 320px) {
     .footer-logo img {
         width: 70px;
     }
-    .footer-links {
-        font-size: 0.7rem;
-    }
-    .footer-contact p {
-        font-size: 0.7rem;
-    }
+
+    .footer-links,
+    .footer-contact,
     .footer-copy {
         font-size: 0.7rem;
     }
 }
-@media (max-width: 280px) {
-    .footer-logo img {
-        width: 60px;
-    }
-    .footer-links {
-        font-size: 0.6rem;
-    }
-    .footer-contact p {
-        font-size: 0.6rem;
-    }
-    .footer-copy {
-        font-size: 0.6rem;
-    }
-}
-@media (max-width: 240px) {
-    .footer-logo img {
-        width: 50px;
-    }
-    .footer-links {
-        font-size: 0.5rem;
-    }
-    .footer-contact p {
-        font-size: 0.5rem;
-    }
-    .footer-copy {
-        font-size: 0.5rem;
-    }
-}
-@media (max-width: 200px) {
-    .footer-logo img {
-        width: 40px;
-    }
-    .footer-links {
-        font-size: 0.4rem;
-    }
-    .footer-contact p {
-        font-size: 0.4rem;
-    }
-    .footer-copy {
-        font-size: 0.4rem;
-    }
-}
-@media (max-width: 160px) {
-    .footer-logo img {
-        width: 30px;
-    }
-    .footer-links {
-        font-size: 0.3rem;
-    }
-    .footer-contact p {
-        font-size: 0.3rem;
-    }
-    .footer-copy {
-        font-size: 0.3rem;
-    }
-}
-@media (max-width: 120px) {
-    .footer-logo img {
-        width: 20px;
-    }
-    .footer-links {
-        font-size: 0.2rem;
-    }
-    .footer-contact p {
-        font-size: 0.2rem;
-    }
-    .footer-copy {
-        font-size: 0.2rem;
-    }
-}
-@media (max-width: 80px) {
-    .footer-logo img {
-        width: 10px;
-    }
-    .footer-links {
-        font-size: 0.1rem;
-    }
-    .footer-contact p {
-        font-size: 0.1rem;
-    }
-    .footer-copy {
-        font-size: 0.1rem;
-    }
-}
+
+
 .footer-links a:hover {
     color: #ac663e;
     text-decoration: underline;
 }
-.footer-socials a:hover {
-    color: #ac663e;
-    text-decoration: underline;
-}
+
 .footer-contact a {
     color: #ac663e;
     text-decoration: none;
 }
+
 .footer-contact a:hover {
     text-decoration: underline;
-}
-.footer-contact a:visited {
-    color: #555;
-}
-.footer-contact a:visited:hover {
-    color: #ac663e;
-}
-.footer-logo img:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease;
-}
-.footer-links a:hover {
-    color: #ac663e;
-    text-decoration: underline;
-}
-.footer-socials a:hover {
-    color: #ac663e;
-    text-decoration: underline;
-}
-.footer-contact p a:hover {
-    color: #ac663e;
-    text-decoration: underline;
-}
-.footer-contact p a:visited {
-    color: #555;
-}
-.footer-contact p a:visited:hover {
-    color: #ac663e;
-}
-.footer-bottom {
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
-}
-
-.footer-bottom p {
-    margin: 0;
-    color: #777;
-    font-size: 0.9rem;
-}
-.footer-bottom .footer-socials {
-    margin-top: 0.5rem;
-}
-.footer-bottom .footer-socials a {
-    font-size: 0.9rem;
-    color: #333;
-}
-.footer-bottom .footer-socials a:hover {
-    color: #ac663e;
-    text-decoration: underline;
-}
-.footer-bottom .footer-socials a:visited {
-    color: #555;
-}
-.footer-bottom .footer-socials a:visited:hover {
-    color: #ac663e;
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}   
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
-}
-.footer-bottom .footer-socials a img {
-    width: 20px;
-    height: 20px;
-    vertical-align: middle;
-}
-.footer-bottom .footer-socials a img:hover {
-    transform: scale(1.1);
-    transition: transform 0.3s ease;
-}
-
-.footer-bottom .footer-socials a img:visited {
-    filter: grayscale(100%);
-}
-.footer-bottom .footer-socials a img:visited:hover {
-    filter: grayscale(0%);
 }
