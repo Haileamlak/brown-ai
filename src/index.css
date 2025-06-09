@@ -2,17 +2,16 @@
 * {
     margin: 0;
     box-sizing: border-box;
-    font-family: Avenir,
+    font-family: 'Quicksand',
         ui-sans-serif,
         system-ui,
         sans-serif,
         "Apple Color Emoji",
         "Segoe UI Emoji",
-        Segoe UI Symbol,
+        "Segoe UI Symbol",
         "Noto Color Emoji";
-    ;
 
-    /* border: .1px solid red */
+        /* border: .1px solid red */
 }
 
 body {
@@ -22,8 +21,8 @@ body {
 }
 
 .container {
-    padding-left: 8%;
-    padding-right: 8%;
+    padding-left: 10%;
+    padding-right: 10%;
 }
 
 
@@ -38,25 +37,25 @@ header {
 
 /* small sized screen */
 @media screen and (max-width: 768px) {
-    /*    
+       
     .container {
-        padding-left: 4%;
-        padding-right: 4%;
-    } */
+        padding-left: 8%;
+        padding-right: 8%;
+    }
 }
 
 @media screen and (max-width: 480px) {
-    /* .container {
-        padding-left: 4%;
-        padding-right: 4%;
-    } */
+    .container {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
 
 }
 
 /* Button styles */
 .btn,
 .btn-orange {
-    background-color: #ac663e;
+    background-color: #AD7A32;
     color: white;
     border: none;
     padding: .8rem 1.2rem;

@@ -8,8 +8,8 @@
 .stat-card {
     background-color: #ffffff;
     padding: .5rem .7rem;
-    border-radius: 7px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    border-radius: 10px;
+    /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05); */
     /* max-width: 315px; */
     height: 60px;
     display: flex;
@@ -25,7 +25,7 @@
 
 .stat-card h3 {
     font-size: 1.3rem;
-    font-weight: 400;
+    font-weight: 500;
     /* color: #0771b8; */
     /* margin-bottom: 0.5rem; */
 }
