@@ -5,21 +5,16 @@
     font-family: 'Arial', sans-serif;
 }
 
-.footer-content {
-    /* max-width: 800px; */
-    /* margin: 0 auto; */
-}
-
 .footer-top {
     display: flex;
     /* flex-wrap: wrap; */
     flex-direction: row;
     align-items: start;
     justify-content: space-between;
-    gap: 2.5rem;
+    gap: .5rem;
 }
 
-.footer-logo {
+.footer-action {
     display: flex;
     flex-direction: column;
     align-items: start;
@@ -73,70 +68,69 @@
     gap: 1rem;
 }
 
-.footer-logo-img1 {
-    width: 120px;
-    border-radius: 24px;
+.footer-logo1 {
+    width: 150px;
+    border-radius: 16px;
     display: none;
 }
 
-@media screen and (max-width: 600px) {
-    /* .footer-logo-img1 {
-        display: none;
 
-    } */
-
-    .footer-top {
-        flex-direction: column;
-        align-items: start;
-    }
-
-
+.footer-logo2 {
+    width: 150px;
+    /* border-radius: 24px; */
+    /* display: none; */
 }
-
-@media (max-width: 768px) {
-
-    .footer-links {
-        flex-direction: column;
-    }
-
-    .footer-logo-img1 {
-        display: none;
-        height: 0;
-    }
-}
-
 @media screen and (max-width: 1036px) {
 
 
-    .footer-logo-img1 {
+    .footer-logo1 {
         /* width: 90px; */
         display: block;
 
     }
 
-    .footer-logo-img2 {
+    .footer-logo2 {
         display: none;
 
     }
 
 }
 
-@media (max-width: 480px) {
-    .footer-logo-img1 {
-        display: none;
-    }
-
-    .footer-contact p {
-        font-size: 0.9rem;
-    }
+@media screen and (max-width: 715px) {
 
     .footer-top {
         flex-direction: column;
         align-items: start;
     }
 
+    .footer-action {
+        flex-direction: row;
+        /* align-items: end; */
+        justify-content: space-between;
+    }
+
+    .footer-logo1 {
+        width: 0px;
+        border-radius: 0;
+        display: block;
+    }
+
+        .footer-top {
+            gap: 2.5rem;   }
+
+}
+
+
+
+@media (max-width: 480px) {
+
+    .footer-contact p {
+        font-size: 0.9rem;
+    }
+
+
     .footer-bottom {
-        flex-direction: column;
+        flex-direction: column-reverse;
         align-items: start;
     }
 }
@@ -147,18 +141,6 @@
     .footer-contact p,
     .footer-copy {
         font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 320px) {
-    .footer-logo img {
-        width: 70px;
-    }
-
-    .footer-links,
-    .footer-contact,
-    .footer-copy {
-        font-size: 0.7rem;
     }
 }
 

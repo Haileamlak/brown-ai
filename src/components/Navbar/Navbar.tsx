@@ -1,3 +1,4 @@
+import Button from '../Button/Button';
 import './Navbar.css';
 import { Link } from 'react-router-dom';
 
@@ -17,7 +18,7 @@ const Navbar: React.FC = () => {
               </nav>
       </div>
       <div className="nav-right">
-              <button className="btn btn-orange">Contact Us</button>
+              <Button text="Contact Us" onClick={() => window.location.href = '/contact'} imageSrc="src/assets/brown-button-icon.png" />
               
         <div className="nav-toggle">
           <img className="menu-icon" src="src/assets/menu-bar.png" alt="Menu Icon" />

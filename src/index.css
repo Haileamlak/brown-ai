@@ -51,35 +51,3 @@ header {
     }
 
 }
-
-/* Button styles */
-.btn,
-.btn-orange {
-    background-color:#c07a35 ;
-        /* background-color: #D47E30; */
-    color: white;
-    border: none;
-    padding: .8rem 1.2rem;
-    font-size: 1rem;
-    font-weight: bold;
-    border-radius: 6px;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-    text-decoration: none;
-    /* button should be able to contain text */
-    display: inline-block;
-    text-align: center;
-    width: fit-content;
-    max-width: 200px;
-    height: fit-content;
-    line-height: 1.5;
-    /* border: .1px solid #ac663e; */
-
-}
-
-.btn:hover,
-.btn-orange:hover {
-    background-color: #c57206;
-    /* color: #ac663e;
-    border : .1px solid #ac663e; */
-}
