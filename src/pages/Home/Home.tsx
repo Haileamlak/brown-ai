@@ -9,21 +9,34 @@ import BulletCard from '../../components/BulletCard/BulletCard';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
 import Footer from '../../components/Footer/Footer';
 import Button from '../../components/Button/Button';
+import ContactModal from '../../components/ContactModal/ContactModal';
 
 const Home: React.FC = () => {
+    const [modalOpen, setModalOpen] = React.useState(false);
+
     return (
         <>
             <div className="landing-container container">
                 <div className='landing-left'>
                     <h1>Brown AI</h1>
                     <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
+                    
+                    <div className='landing-img'>
+                        <img src="src/assets/software-developer.jpeg" alt="Logo" width={300} />
 
-                    <Button text="Contact Us" onClick={() => window.location.href = '/contact'} imageSrc='src/assets/brown-button-icon.png' />
+                    </div>
+                    <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='src/assets/brown-button-icon.png' />
+                    <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+
                 </div>
                 <div className='landing-right'>
                     <img src="src/assets/software-developer.jpeg" alt="Logo" width={300} />
-                    
+
                 </div>
+                {/* <div className='landing-action'>
+                    <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='src/assets/brown-button-icon.png' />
+                    <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
+                </div> */}
             </div>
             <div className='services-container container'>
                 <h2>We develop</h2>
@@ -52,23 +65,23 @@ const Home: React.FC = () => {
 
             <div className='vision-container container'>
                 <h2>Our Vision</h2>
-                    <p>We aim to build a world where AI is accessible to everyone, enabling individuals and businesses to harness its power for innovation and growth.</p>
+                <p>We aim to build a world where AI is accessible to everyone, enabling individuals and businesses to harness its power for innovation and growth.</p>
                 <div className='vision-box'>
-                    
+
                 </div>
                 {/* <div className='vision-card'> */}
                 {/* </div> */}
             </div>
 
-           
-            <div className='projects-container container'>
+
+            {/* <div className='projects-container container'>
                 <h2>Latest Projects</h2>
                 <div className='projects-cards'>
                     <ProjectCard title="Y Combinator Website" description="A platform for startup funding and resources that connects entrepreneurs with investors." imageUrl="src/assets/project-image-1.png" link="https://www.ycombinator.com/" />
                     <ProjectCard title="Youtube" description="A video sharing platform that allows users to upload, view, and share videos." imageUrl="src/assets/project-image-2.png" link="https://www.youtube.com/" />
                     <ProjectCard title="MK Tube" description="A live and on-demand video streaming platform for mahibere kidusan tv." imageUrl="src/assets/project-image-3.png" link="https://www.mktube.com/" />
                 </div>
-            </div>
+            </div> */}
 
             <div className='how-container container'>
                 <h2>This is how we build.</h2>
@@ -110,7 +123,7 @@ const Home: React.FC = () => {
                         text="We saw immediate results after implementing their AI strategies."
                         author="Elon Musk"
                         jobTitle="CEO, SpaceX"
-                        imageUrl="src/assets/elon-musk.png" 
+                        imageUrl="src/assets/elon-musk.png"
                     />
                 </div>
             </div>
