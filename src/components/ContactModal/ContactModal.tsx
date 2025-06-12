@@ -25,7 +25,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose }) => {
 
         try {
             setIsSending(true);
-            const res = await fetch('https://formspree.io/f/daxgvyklob', {
+            const res = await fetch('https://formspree.io/f/xgvyklob', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
