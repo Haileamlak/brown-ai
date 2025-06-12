@@ -13,7 +13,7 @@ import Button from '../../components/Button/Button';
 const Home: React.FC = () => {
     return (
         <>
-            <div className="landing-container ">
+            <div className="landing-container container">
                 <div className='landing-left'>
                     <h1>Brown AI</h1>
                     <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
@@ -21,7 +21,7 @@ const Home: React.FC = () => {
                     <Button text="Contact Us" onClick={() => window.location.href = '/contact'} imageSrc='src/assets/brown-button-icon.png' />
                 </div>
                 <div className='landing-right'>
-                    <img src="src/assets/tech.png" alt="Logo" width={300} />
+                    <img src="src/assets/software-developer.jpeg" alt="Logo" width={300} />
                     
                 </div>
             </div>
