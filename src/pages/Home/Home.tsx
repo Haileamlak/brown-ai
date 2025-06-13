@@ -22,19 +22,19 @@ const Home: React.FC = () => {
                     <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
                     
                     <div className='landing-img'>
-                        <img src="src/assets/software-developer.jpeg" alt="Logo" width={300} />
+                        <img src="./assets/software-developer.jpeg" alt="Logo" width={300} />
 
                     </div>
-                    <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='src/assets/brown-button-icon.png' />
+                    <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
                 </div>
                 <div className='landing-right'>
-                    <img src="src/assets/software-developer.jpeg" alt="Logo" width={300} />
+                    <img src="./assets/software-developer.jpeg" alt="Logo" width={300} />
 
                 </div>
                 {/* <div className='landing-action'>
-                    <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='src/assets/brown-button-icon.png' />
+                    <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
                 </div> */}
             </div>
@@ -44,22 +44,22 @@ const Home: React.FC = () => {
 
                 <div className='services-cards'>
 
-                    <ServiceCard imageUrl='src/assets/ai-agent.png' text='AI Agents' />
-                    <ServiceCard imageUrl='src/assets/agentic-mobile-app.png' text='Agentic Apps' />
-                    <ServiceCard imageUrl='src/assets/ai-model.png' text='AI Models' />
-                    <ServiceCard imageUrl='src/assets/ai-chatbot.png' text='Chatbots' />
-                    <ServiceCard imageUrl='src/assets/AI-Plugin.png' text='AI Plugins' />
+                    <ServiceCard imageUrl='./assets/ai-agent.png' text='AI Agents' />
+                    <ServiceCard imageUrl='./assets/agentic-mobile-app.png' text='Agentic Apps' />
+                    <ServiceCard imageUrl='./assets/ai-model.png' text='AI Models' />
+                    <ServiceCard imageUrl='./assets/ai-chatbot.png' text='Chatbots' />
+                    <ServiceCard imageUrl='./assets/AI-Plugin.png' text='AI Plugins' />
                 </div>
-                <h2 style={{ fontWeight: 400 }}><img src="src/assets/turn-right.png" alt="Arrow" width={24} /> in addition to the usual and typical</h2>
+                <h2 style={{ fontWeight: 400 }}><img src="./assets/turn-right.png" alt="Arrow" width={24} /> in addition to the usual and typical</h2>
 
                 <div className='services-cards'>
 
-                    <ServiceCard imageUrl='src/assets/web-app.png' text='Web Apps' />
-                    <ServiceCard imageUrl='src/assets/mobile-app.png' text='Mobile Apps' />
-                    <ServiceCard imageUrl='src/assets/website.png' text='Websites' />
-                    <ServiceCard imageUrl='src/assets/API.png' text='APIs' />
-                    <ServiceCard imageUrl='src/assets/browser-extension.png' text='Browser Extensions' />
-                    <ServiceCard imageUrl='src/assets/desktop-app.png' text='Desktop Apps' />
+                    <ServiceCard imageUrl='./assets/web-app.png' text='Web Apps' />
+                    <ServiceCard imageUrl='./assets/mobile-app.png' text='Mobile Apps' />
+                    <ServiceCard imageUrl='./assets/website.png' text='Websites' />
+                    <ServiceCard imageUrl='./assets/API.png' text='APIs' />
+                    <ServiceCard imageUrl='./assets/browser-extension.png' text='Browser Extensions' />
+                    <ServiceCard imageUrl='./assets/desktop-app.png' text='Desktop Apps' />
                 </div>
             </div>
 
@@ -77,9 +77,9 @@ const Home: React.FC = () => {
             <div className='projects-container container'>
                 <h2>Latest Projects</h2>
                 <div className='projects-cards'>
-                    <ProjectCard title="ChatGPT" description="A conversational AI model that understands and generates human-like text." imageUrl="src/assets/project-image-4.png" link="https://www.chatgpt.com/" />
-                    <ProjectCard title="Youtube" description="A video sharing platform that allows users to upload, view, and share videos." imageUrl="src/assets/project-image-2.png" link="https://www.youtube.com/" />
-                    <ProjectCard title="Claude" description="A next-generation AI model for advanced natural language understanding." imageUrl="src/assets/project-image-5.png" link="https://www.claude.ai/" />
+                    <ProjectCard title="ChatGPT" description="A conversational AI model that understands and generates human-like text." imageUrl="./assets/project-image-4.png" link="https://www.chatgpt.com/" />
+                    <ProjectCard title="Youtube" description="A video sharing platform that allows users to upload, view, and share videos." imageUrl="./assets/project-image-2.png" link="https://www.youtube.com/" />
+                    <ProjectCard title="Claude" description="A next-generation AI model for advanced natural language understanding." imageUrl="./assets/project-image-5.png" link="https://www.claude.ai/" />
                 </div>
             </div>
 
@@ -111,19 +111,19 @@ const Home: React.FC = () => {
                         text="Brown AI transformed our business with their innovative solutions."
                         author="Sundar Pichai"
                         jobTitle="CEO, Google"
-                        imageUrl="src/assets/sundar-pichai.png"
+                        imageUrl="./assets/sundar-pichai.png"
                     />
                     <TestimonialCard
                         text="The team at Brown AI is incredibly talented and dedicated."
                         author="Satya Nadella"
                         jobTitle="CEO, Microsoft"
-                        imageUrl="src/assets/satya-nadella.png"
+                        imageUrl="./assets/satya-nadella.png"
                     />
                     <TestimonialCard
                         text="We saw immediate results after implementing their AI strategies."
                         author="Elon Musk"
                         jobTitle="CEO, SpaceX"
-                        imageUrl="src/assets/elon-musk.png"
+                        imageUrl="./assets/elon-musk.png"
                     />
                 </div>
             </div>
