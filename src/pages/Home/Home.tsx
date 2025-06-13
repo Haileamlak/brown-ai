@@ -74,14 +74,14 @@ const Home: React.FC = () => {
             </div>
 
 
-            {/* <div className='projects-container container'>
+            <div className='projects-container container'>
                 <h2>Latest Projects</h2>
                 <div className='projects-cards'>
-                    <ProjectCard title="Y Combinator Website" description="A platform for startup funding and resources that connects entrepreneurs with investors." imageUrl="src/assets/project-image-1.png" link="https://www.ycombinator.com/" />
+                    <ProjectCard title="ChatGPT" description="A conversational AI model that understands and generates human-like text." imageUrl="src/assets/project-image-4.png" link="https://www.chatgpt.com/" />
                     <ProjectCard title="Youtube" description="A video sharing platform that allows users to upload, view, and share videos." imageUrl="src/assets/project-image-2.png" link="https://www.youtube.com/" />
-                    <ProjectCard title="MK Tube" description="A live and on-demand video streaming platform for mahibere kidusan tv." imageUrl="src/assets/project-image-3.png" link="https://www.mktube.com/" />
+                    <ProjectCard title="Claude" description="A next-generation AI model for advanced natural language understanding." imageUrl="src/assets/project-image-5.png" link="https://www.claude.ai/" />
                 </div>
-            </div> */}
+            </div>
 
             <div className='how-container container'>
                 <h2>This is how we build.</h2>

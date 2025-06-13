@@ -37,7 +37,7 @@ const Navbar: React.FC = () => {
                     <img className="menu-icon" src={`src/assets/${menuOpen ? 'close' : 'menu'}-icon.png`} alt="Menu Icon" /*onClick={handleToggle}*/ style={{ width: menuOpen ? 30 : 50, marginRight: menuOpen ? 9 : 0 }} />   
                 </div>
             </div>
-
+                        
             {menuOpen && (
                 <div className="menu-popup-overlay">
                     <div className="menu-popup">
