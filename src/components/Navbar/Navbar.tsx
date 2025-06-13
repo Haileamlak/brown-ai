@@ -8,9 +8,9 @@ const Navbar: React.FC = () => {
     const [modalOpen, setModalOpen] = React.useState(false);
     const [menuOpen, setMenuOpen] = React.useState(false);
 
-    const handleToggle = () => {
-        setMenuOpen(prev => !prev);
-    };
+    // const handleToggle = () => {
+    //     setMenuOpen(prev => !prev);
+    // };
 
     const closeMenu = () => {
         setMenuOpen(false);

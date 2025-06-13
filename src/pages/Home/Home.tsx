@@ -1,9 +1,9 @@
 import React from 'react';
 import './Home.css'; // Assuming you have a CSS file for styling
-import { Link } from 'react-router-dom';
-import Card from '../../components/ServiceCard/ServiceCard';
+// import { Link } from 'react-router-dom';
+// import Card from '../../components/ServiceCard/ServiceCard';
 import ServiceCard from '../../components/ServiceCard/ServiceCard';
-import TextCard from '../../components/TextCard/TextCard';
+// import TextCard from '../../components/TextCard/TextCard';
 import ProjectCard from '../../components/ProjectCard/ProjectCard';
 import BulletCard from '../../components/BulletCard/BulletCard';
 import TestimonialCard from '../../components/TestimonialCard/TestimonialCard';
