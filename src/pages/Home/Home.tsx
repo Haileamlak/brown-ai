@@ -48,7 +48,7 @@ const Home: React.FC = () => {
                     <ServiceCard imageUrl='./assets/agentic-mobile-app.png' text='Agentic Apps' />
                     <ServiceCard imageUrl='./assets/ai-model.png' text='AI Models' />
                     <ServiceCard imageUrl='./assets/ai-chatbot.png' text='Chatbots' />
-                    <ServiceCard imageUrl='./assets/AI-Plugin.png' text='AI Plugins' />
+                    <ServiceCard imageUrl='./assets/ai-plugin.png' text='AI Plugins' />
                 </div>
                 <h2 style={{ fontWeight: 400 }}><img src="./assets/turn-right.png" alt="Arrow" width={24} /> in addition to the usual and typical</h2>
 
@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                     <ServiceCard imageUrl='./assets/web-app.png' text='Web Apps' />
                     <ServiceCard imageUrl='./assets/mobile-app.png' text='Mobile Apps' />
                     <ServiceCard imageUrl='./assets/website.png' text='Websites' />
-                    <ServiceCard imageUrl='./assets/API.png' text='APIs' />
+                    <ServiceCard imageUrl='./assets/api.png' text='APIs' />
                     <ServiceCard imageUrl='./assets/browser-extension.png' text='Browser Extensions' />
                     <ServiceCard imageUrl='./assets/desktop-app.png' text='Desktop Apps' />
                 </div>
