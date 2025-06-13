@@ -57,7 +57,7 @@ const Home: React.FC = () => {
                     <ServiceCard imageUrl='./assets/web-app.png' text='Web Apps' />
                     <ServiceCard imageUrl='./assets/mobile-app.png' text='Mobile Apps' />
                     <ServiceCard imageUrl='./assets/website.png' text='Websites' />
-                    <ServiceCard imageUrl='./assets/API.png' text='APIs' />
+                    <ServiceCard imageUrl='./assets/api.png' text='APIs' />
                     <ServiceCard imageUrl='./assets/browser-extension.png' text='Browser Extensions' />
                     <ServiceCard imageUrl='./assets/desktop-app.png' text='Desktop Apps' />
                 </div>

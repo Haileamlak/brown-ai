@@ -32,7 +32,7 @@ const Footer: React.FC = () => {
                         <p><span style={{ fontWeight: 'bold' }}>Phone:</span> <a href="tel:+251906397248">+251 906 397 248</a></p>
                         <p><span style={{ fontWeight: 'bold' }}>Address:</span> Brown AI St, AI City, AI Country</p>
                     </div>
-                    <img src="src/assets/brownlogo4.png" alt="Brown AI Logo" className='footer-logo2' width={200} />
+                    <img src="./assets/brownlogo4.png" alt="Brown AI Logo" className='footer-logo2' width={200} />
 
                 </div>
                 <div className="footer-bottom">
