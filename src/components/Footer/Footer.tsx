@@ -13,10 +13,10 @@ const Footer: React.FC = () => {
                 <div className="footer-top">
                     <div className="footer-action">
 
-                        <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='src/assets/brown-button-icon.png' />
+                        <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                         <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
-                        <img src="src/assets/brownlogo4.png" alt="Brown AI Logo" className='footer-logo1' />
+                        <img src="./assets/brownlogo4.png" alt="Brown AI Logo" className='footer-logo1' />
                     </div>
                     {/* <div className="footer-links">
                         <h3>Quick Links</h3>
@@ -39,8 +39,8 @@ const Footer: React.FC = () => {
                     <p className='footer-copy'>&copy; {new Date().getFullYear()} Brown AI. All rights reserved.</p>
                     <p className='footer-copy'>Design inspired by Y Combinator's <a target='_blank' href='https://ycombinator.com'>website</a>.</p>
                     <div className="footer-socials">
-                        <a href="https://www.twitter.com/BrownAI" target="_blank" rel="noopener noreferrer"><img src="/src/assets/twitter-icon.png" alt="Twitter" width={24} /></a>
-                        <a href="https://www.linkedin.com/company/brown-ai" target="_blank" rel="noopener noreferrer"><img src="/src/assets/linkedin-icon.png" alt="LinkedIn" width={24} /></a>
+                        <a href="https://www.twitter.com/BrownAI" target="_blank" rel="noopener noreferrer"><img src="./assets/twitter-icon.png" alt="Twitter" width={24} /></a>
+                        <a href="https://www.linkedin.com/company/brown-ai" target="_blank" rel="noopener noreferrer"><img src="./assets/linkedin-icon.png" alt="LinkedIn" width={24} /></a>
                     </div>
                 </div>
             </div>
