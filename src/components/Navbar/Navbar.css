@@ -102,7 +102,7 @@
 
 /* Mobile styles */
 @media (max-width: 768px) {
-    .nav-links {
+    .popup-nav-links {
         position: absolute;
         top: 100%;
         left: 0;

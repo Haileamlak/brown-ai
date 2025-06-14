@@ -21,17 +21,31 @@ const Home: React.FC = () => {
                     <h1>Brown AI</h1>
                     <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
                     
-                    <div className='landing-img'>
-                        <img src="./assets/software-developer.jpeg" alt="Logo" width={300} />
-
+                    <div className='landing-video'>
+                        <video
+                            src="./assets/modern-app.mp4"
+                            autoPlay
+                            loop
+                            muted
+                            playsInline
+                            
+                            style={{ display: 'block', pointerEvents: 'none' }}
+                        />
                     </div>
                     <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
                 </div>
                 <div className='landing-right'>
-                    <img src="./assets/software-developer.jpeg" alt="Logo" width={300} />
-
+                    <video
+                        src="./assets/modern-app.mp4"
+                        autoPlay
+                        loop
+                        muted
+                        playsInline
+                        // width={300}
+                        style={{ display: 'block', pointerEvents: 'none' }}
+                    />
                 </div>
                 {/* <div className='landing-action'>
                     <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
