@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: space-between;
     /* height: 70vh; */
-    background-color: #F8FAFB;
+    /* background-color: #F8FAFB; */
     padding: 5% 0;
 
 }
@@ -14,9 +14,11 @@
     display: flex;
     flex-direction: column;
     align-items: start;
-    justify-content: space-between;
+    justify-content: center;
     /* gap: 1.5rem; */
-    width: 55%;
+    width: 100%;
+    height: 100%;
+    min-height: 400px;
     /* padding: 0r  em 0 2rem; */
 }
 
@@ -30,45 +32,46 @@
 
 .landing-left p {
     font-size: 1.7rem;
-    font-weight: 400;
-    color: #555;
+    /* font-weight: 400; */
+    color: #000000;
     margin-bottom: 1.5rem;
+    font-weight: 'bold';
 }
 
-.landing-right {
+/* .landing-right {
     display: flex;
     align-items: start;
     justify-content: start;
     width: 45%;
 
     height: 100%;
-}
+} */
 
-.landing-right video {
+/* .landing-right video {
     width: 100%;
     aspect-ratio: 1.3 / 1;
     height: auto;
     border-radius: 20px;
-    object-fit: cover;
+    object-fit: cover; */
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
+/* }
 
 .landing-video {
     display: none;
     width: 100%;
     height: auto;
     border-radius: 20px;
-}
+} */
 
-.landing-video video {
+/* .landing-video video {
     width: 100%;
     height: 180px;
     object-fit: cover;
     border-radius: 15px;
-    margin-right: auto;
+    margin-right: auto; */
     /* object-fit: cover; */
     /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
-}
+/* } */
 
 .landing-left button {
     display: flex;
@@ -330,4 +333,30 @@
     justify-content: space-around;
     padding: 1rem 8% 0;
     background-color: #f1f1eb;
+}
+
+
+
+
+.overlay {
+    position: absolute;
+    top: 30px;
+    left: 800px;
+    width: 100%;
+    height: 100vh;
+    /* min-height: 550px; */
+    /* background: rgba(0, 0, 0, 0.3); */
+    /* darker overlay */
+    z-index: -1;
+}
+
+.landing-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* border-radius: 20px; */
+    z-index: -10;   
 }

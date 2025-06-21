@@ -17,26 +17,28 @@ const Home: React.FC = () => {
     return (
         <>
             <div className="landing-container container">
+                {/* <div className='overlay'>
+                    
+                </div> */}
+                <video className='landing-video'
+                    src="./assets/modern-app.mp4"
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+
+                    style={{ display: 'block', pointerEvents: 'none' }}
+                />
                 <div className='landing-left'>
                     <h1>Brown AI</h1>
                     <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
-                    
-                    <div className='landing-video'>
-                        <video
-                            src="./assets/modern-app.mp4"
-                            autoPlay
-                            loop
-                            muted
-                            playsInline
-                            
-                            style={{ display: 'block', pointerEvents: 'none' }}
-                        />
-                    </div>
+
+
                     <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
                 </div>
-                <div className='landing-right'>
+                {/* <div className='landing-right'>
                     <video
                         src="./assets/modern-app.mp4"
                         autoPlay
@@ -46,7 +48,7 @@ const Home: React.FC = () => {
                         // width={300}
                         style={{ display: 'block', pointerEvents: 'none' }}
                     />
-                </div>
+                </div> */}
                 {/* <div className='landing-action'>
                     <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
@@ -58,11 +60,11 @@ const Home: React.FC = () => {
 
                 <div className='services-cards'>
 
-                    <ServiceCard imageUrl='./assets/ai-agent.png' text='AI Agents' />
                     <ServiceCard imageUrl='./assets/agentic-mobile-app.png' text='Agentic Apps' />
-                    <ServiceCard imageUrl='./assets/ai-model.png' text='AI Models' />
-                    <ServiceCard imageUrl='./assets/ai-chatbot.png' text='Chatbots' />
+                    {/* <ServiceCard imageUrl='./assets/ai-model.png' text='AI Models' /> */}
+                    <ServiceCard imageUrl='./assets/ai-chatbot.png' text='Bots' />
                     <ServiceCard imageUrl='./assets/ai-plugin.png' text='AI Plugins' />
+                    <ServiceCard imageUrl='./assets/ai-agent.png' text='AI Agents' />
                 </div>
                 <h2 style={{ fontWeight: 400 }}><img src="./assets/turn-right.png" alt="Arrow" width={24} /> in addition to the usual and typical</h2>
 
@@ -71,9 +73,9 @@ const Home: React.FC = () => {
                     <ServiceCard imageUrl='./assets/web-app.png' text='Web Apps' />
                     <ServiceCard imageUrl='./assets/mobile-app.png' text='Mobile Apps' />
                     <ServiceCard imageUrl='./assets/website.png' text='Websites' />
-                    <ServiceCard imageUrl='./assets/api.png' text='APIs' />
-                    <ServiceCard imageUrl='./assets/browser-extension.png' text='Browser Extensions' />
-                    <ServiceCard imageUrl='./assets/desktop-app.png' text='Desktop Apps' />
+                    {/* <ServiceCard imageUrl='./assets/api.png' text='APIs' /> */}
+                    {/* <ServiceCard imageUrl='./assets/browser-extension.png' text='Browser Extensions' />
+                    <ServiceCard imageUrl='./assets/desktop-app.png' text='Desktop Apps' /> */}
                 </div>
             </div>
 
