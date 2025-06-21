@@ -29,7 +29,7 @@ const Footer: React.FC = () => {
                     <div className="footer-contact">
                         <h3>Contact Info</h3>
                         <p><span style={{ fontWeight: 'bold' }}>Email:</span> <a href="mailto:info.brown.ai@gmail.com">info.brown.ai@gmail.com</a></p>
-                        <p><span style={{ fontWeight: 'bold' }}>Phone:</span> <a href="tel:+251906397248">+251 906 397 248</a></p>
+                        {/* <p><span style={{ fontWeight: 'bold' }}>Phone:</span> <a href="tel:+251906397248">+251 906 397 248</a></p> */}
                         <p><span style={{ fontWeight: 'bold' }}>Address:</span> Brown AI St, AI City, AI Country</p>
                     </div>
                     <img src="./assets/brownlogo4.png" alt="Brown AI Logo" className='footer-logo2' width={200} />
