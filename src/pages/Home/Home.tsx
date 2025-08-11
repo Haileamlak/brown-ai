@@ -20,25 +20,17 @@ const Home: React.FC = () => {
                 {/* <div className='overlay'>
                     
                 </div> */}
-                <video className='landing-video'
-                    src="./assets/modern-app.mp4"
-                    autoPlay
-                    loop
-                    muted
-                    playsInline
-
-                    style={{ display: 'block', pointerEvents: 'none' }}
-                />
+               
                 <div className='landing-left'>
-                    <h1>Brown AI</h1>
-                    <p>We craft softwares people need using <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and other state-of-the-art technologies.</p>
+                    <h1>Bunama AI</h1>
+                    <p>We combine <span style={{ fontWeight: 'bold', color: '#c07a35' }}>Artificial Intelligence</span> and cutting-edge technology to build custom software solutions tailored to your business needs.</p>
 
 
                     <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
 
                 </div>
-                {/* <div className='landing-right'>
+                <div className='landing-right'>
                     <video
                         src="./assets/modern-app.mp4"
                         autoPlay
@@ -48,7 +40,7 @@ const Home: React.FC = () => {
                         // width={300}
                         style={{ display: 'block', pointerEvents: 'none' }}
                     />
-                </div> */}
+                </div>
                 {/* <div className='landing-action'>
                     <Button text="Contact Us" onClick={() => setModalOpen(true)} imageSrc='./assets/brown-button-icon.png' />
                     <ContactModal isOpen={modalOpen} onClose={() => setModalOpen(false)} />
